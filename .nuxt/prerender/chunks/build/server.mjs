@@ -1,6 +1,6 @@
 import { defineComponent, mergeProps, hasInjectionContext, getCurrentInstance, ref, inject, h, Suspense, Fragment, useSSRContext, createApp, provide, shallowReactive, toRef, onErrorCaptured, onServerPrefetch, unref, createVNode, resolveDynamicComponent, reactive, effectScope, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, defineAsyncComponent, getCurrentScope } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/vue/index.mjs';
 import { $fetch } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/ofetch/dist/node.mjs';
-import { b as baseURL } from '../_/renderer.mjs';
+import { b as baseURL, p as publicAssetsURL } from '../_/renderer.mjs';
 import { createHooks } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/hookable/dist/index.mjs';
 import { getContext, executeAsync } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/unctx/dist/index.mjs';
 import { sanitizeStatusCode, createError as createError$1, appendHeader } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/h3/dist/index.mjs';
@@ -397,7 +397,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-B4AiWYQW.mjs')
+    component: () => import('./index-6Bwg57ox.mjs')
   },
   {
     name: "teams",
@@ -407,7 +407,7 @@ const _routes = [
   {
     name: "about-us",
     path: "/about-us",
-    component: () => import('./about-us-BE9p1Px6.mjs')
+    component: () => import('./about-us-B92NXOBi.mjs')
   },
   {
     name: "webinar-EventDetails",
@@ -417,7 +417,7 @@ const _routes = [
   {
     name: "webinar-roadmap-to-publishing-social-science",
     path: "/webinar/roadmap-to-publishing-social-science",
-    component: () => import('./roadmap-to-publishing-social-science-G67CHQK7.mjs')
+    component: () => import('./roadmap-to-publishing-social-science-AoPHEytE.mjs')
   }
 ];
 const ROUTE_KEY_PARENTHESES_RE = /(:\w+)\([^)]+\)/g;
@@ -928,12 +928,12 @@ _sfc_main$4.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/BlackButton.vue");
   return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
+const _imports_0 = publicAssetsURL("/images/logo.png");
 const _sfc_main$3 = {
   __name: "Navbar",
   __ssrInlineRender: true,
   setup(__props) {
     const isOpen = ref(false);
-    const baseURL2 = (/* @__PURE__ */ useRuntimeConfig()).app.baseURL;
     const openWhatsApp = () => {
       console.log("WhatsApp button clicked");
       const phoneNumber = "917025016081";
@@ -943,7 +943,7 @@ const _sfc_main$3 = {
     };
     return (_ctx, _push, _parent, _attrs) => {
       const _component_BlackButton = _sfc_main$4;
-      _push(`<nav${ssrRenderAttrs(mergeProps({ class: "flex items-center justify-between px-6 py-4 bg-white/80 backdrop-blur-md shadow-md rounded-full m-4 max-w-6xl mx-auto" }, _attrs))}><div class="flex items-center space-x-2"><img${ssrRenderAttr("src", `${unref(baseURL2)}/images/logo.png`)} alt="Think Tribe Logo" class="h-12 w-auto"></div><ul class="hidden md:flex items-center space-x-6 text-sm text-gray-800 font-medium"><li><a${ssrRenderAttr("href", `${unref(baseURL2)}/`)} class="hover:text-green-700">Home</a></li><li><a${ssrRenderAttr("href", `${unref(baseURL2)}/about-us`)} class="hover:text-green-700">About Us</a></li></ul><div class="hidden md:flex">`);
+      _push(`<nav${ssrRenderAttrs(mergeProps({ class: "flex items-center justify-between px-6 py-4 bg-white/80 backdrop-blur-md shadow-md rounded-full m-4 max-w-6xl mx-auto" }, _attrs))}><div class="flex items-center space-x-2"><img${ssrRenderAttr("src", _imports_0)} alt="Think Tribe Logo" class="h-12 w-auto"></div><ul class="hidden md:flex items-center space-x-6 text-sm text-gray-800 font-medium"><li><a href="/" class="hover:text-green-700">Home</a></li><li><a href="/about-us" class="hover:text-green-700">About Us</a></li></ul><div class="hidden md:flex">`);
       _push(ssrRenderComponent(_component_BlackButton, {
         label: "Reach out to us",
         onClick: openWhatsApp
@@ -956,7 +956,7 @@ const _sfc_main$3 = {
       }
       _push(`</button>`);
       if (isOpen.value) {
-        _push(`<div class="absolute top-20 left-4 right-4 bg-white rounded-xl shadow-lg z-50 flex flex-col space-y-4 p-6 md:hidden"><a${ssrRenderAttr("href", `${unref(baseURL2)}/`)} class="hover:text-green-700">Home</a><a${ssrRenderAttr("href", `${unref(baseURL2)}/about-us`)} class="hover:text-green-700">About Us</a><div class="md:flex">`);
+        _push(`<div class="absolute top-20 left-4 right-4 bg-white rounded-xl shadow-lg z-50 flex flex-col space-y-4 p-6 md:hidden"><a href="/" class="hover:text-green-700">Home</a><a href="/about-us" class="hover:text-green-700">About Us</a><div class="md:flex">`);
         _push(ssrRenderComponent(_component_BlackButton, {
           label: "Reach out to us",
           onClick: openWhatsApp
@@ -1023,7 +1023,7 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-CHdzcnnw.mjs'));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-Bf0-yVOr.mjs'));
     const _Error = defineAsyncComponent(() => import('./error-500-DkCMuhje.mjs'));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
@@ -1106,5 +1106,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { _export_sfc as _, _sfc_main$4 as a, useRouter as b, useNuxtApp as c, nuxtLinkDefaults as d, entry$1 as default, navigateTo as n, resolveRouteObject as r, tryUseNuxtApp as t, useRuntimeConfig as u };
+export { _export_sfc as _, _sfc_main$4 as a, useNuxtApp as b, useRuntimeConfig as c, nuxtLinkDefaults as d, entry$1 as default, navigateTo as n, resolveRouteObject as r, tryUseNuxtApp as t, useRouter as u };
 //# sourceMappingURL=server.mjs.map
