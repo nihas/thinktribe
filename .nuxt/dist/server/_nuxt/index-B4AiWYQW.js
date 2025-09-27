@@ -1,0 +1,43 @@
+import { u as useRuntimeConfig, a as _sfc_main$1, _ as _export_sfc } from "../server.mjs";
+import { defineComponent, unref, useSSRContext } from "vue";
+import { ssrRenderAttrs, ssrRenderAttr, ssrRenderComponent } from "vue/server-renderer";
+import { publicAssetsURL } from "#internal/nuxt/paths";
+import "ofetch";
+import "/Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/hookable/dist/index.mjs";
+import "/Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/unctx/dist/index.mjs";
+import "/Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/h3/dist/index.mjs";
+import "vue-router";
+import "/Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/radix3/dist/index.mjs";
+import "/Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/defu/dist/defu.mjs";
+import "/Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/ufo/dist/index.mjs";
+const _imports_0 = publicAssetsURL("/images/instagram.svg");
+const _sfc_main = /* @__PURE__ */ defineComponent({
+  __name: "index",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const baseURL = useRuntimeConfig().app.baseURL;
+    return (_ctx, _push, _parent, _attrs) => {
+      const _component_BlackButton = _sfc_main$1;
+      _push(`<div${ssrRenderAttrs(_attrs)} data-v-3caf68dd><section class="relative h-screen w-full overflow-hidden" data-v-3caf68dd><video autoplay muted loop playsinline class="absolute w-full h-full object-cover z-0" data-v-3caf68dd><source${ssrRenderAttr("src", `${unref(baseURL)}/white_sands.mp4`)} type="video/mp4" data-v-3caf68dd> Your browser does not support the video tag. </video><div class="absolute inset-0 bg-[#ca4e00]/90 mix-blend-multiply z-10" data-v-3caf68dd></div><div class="relative z-30 flex flex-col items-center justify-center h-full text-center px-4" data-v-3caf68dd><h1 class="text-white text-4xl md:text-6xl font-bold leading-tight" data-v-3caf68dd> THINK TRIBE </h1><p class="text-white text-lg md:text-2xl mt-2 font-light" data-v-3caf68dd> together we thrive. </p></div></section><section class="bg-[#F9F7F1] py-20 px-6" data-v-3caf68dd><div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center" data-v-3caf68dd><h2 class="text-4xl sm:text-5xl lg:text-4xl font-bold text-[#2E4B42] leading-tight" data-v-3caf68dd> ThinkTribe is dedicated to improving mental health through expert-led therapy, podcasts, and educational webinars designed for individuals and communities. </h2><div data-v-3caf68dd><hr class="border-[#2E4B42] mb-6" data-v-3caf68dd><p class="text-[#2E4B42] text-lg mb-4" data-v-3caf68dd> At ThinkTribe, we are on a mission to make mental health support more accessible, inclusive, and engaging for everyone. We provides a supportive platform where individuals and communities can learn, heal, and thrive together. We believe mental health is not a luxury — it&#39;s a necessity — and we’re here to make it a shared journey. </p>`);
+      _push(ssrRenderComponent(_component_BlackButton, { label: "More about us" }, null, _parent));
+      _push(`</div></div></section><section class="bg-white py-16 px-4 sm:px-6 lg:px-8" data-v-3caf68dd><div class="max-w-7xl mx-auto grid gap-12 md:grid-cols-2" data-v-3caf68dd><div class="relative border border-black bg-white p-8 shadow-lg transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl opacity-0 animate-fade-up" data-v-3caf68dd><h3 class="text-center text-2xl font-serif mb-6" data-v-3caf68dd>Trainings + Workshops + Therapy</h3><div class="flex justify-center" data-v-3caf68dd>`);
+      _push(ssrRenderComponent(_component_BlackButton, { label: "Cognitive Studio" }, null, _parent));
+      _push(`</div></div><div class="relative border border-black bg-white p-8 shadow-lg transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl opacity-0 animate-fade-up delay-200" data-v-3caf68dd><h3 class="text-center text-2xl font-serif mb-6" data-v-3caf68dd>Our Podcasts</h3><div class="flex justify-center" data-v-3caf68dd>`);
+      _push(ssrRenderComponent(_component_BlackButton, { label: "Tribe Talks" }, null, _parent));
+      _push(`</div></div></div></section><section class="bg-[#F9F7F1] py-16 px-4 md:px-12" data-v-3caf68dd><div class="max-w-7xl mx-auto" data-v-3caf68dd><h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800" data-v-3caf68dd> Upcoming Webinars </h2><div class="grid gap-8 justify-center md:grid-cols-2 lg:grid-cols-3" data-v-3caf68dd><div class="bg-white rounded-lg shadow-lg overflow-hidden border max-w-sm" data-v-3caf68dd><img${ssrRenderAttr("src", `${unref(baseURL)}/images/webinar-1234.jpg`)} alt="Webinar Topic" class="w-full h-48 object-cover" data-v-3caf68dd><div class="p-6" data-v-3caf68dd><p class="text-sm text-gray-500 mb-2" data-v-3caf68dd>September 27, 2025</p><h3 class="text-xl font-semibold text-gray-800 mb-2" data-v-3caf68dd>The Roadmap to publishing in social science</h3><p class="text-gray-600 text-sm mb-4" data-v-3caf68dd> Are you a postgraduate student or a recent graduate wondering what to do with your dissertation after submission? </p><a${ssrRenderAttr("href", `${unref(baseURL)}/webinar/roadmap-to-publishing-social-science`)} class="inline-block px-4 py-2 text-sm bg-[#fd620e] text-white rounded hover:bg-[#e1550c] transition" data-v-3caf68dd> Learn More </a></div></div></div></div></section><section class="relative h-[600px] w-full overflow-hidden text-white" data-v-3caf68dd><video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover" data-v-3caf68dd><source${ssrRenderAttr("src", `${unref(baseURL)}/white_sands.mp4`)} type="video/mp4" data-v-3caf68dd> Your browser does not support the video tag. </video><div class="absolute inset-0 bg-[#FD6200]/90 mix-blend-multiply z-10" data-v-3caf68dd></div><div class="relative z-20 flex flex-col justify-center items-center text-center h-full px-4" data-v-3caf68dd><h2 class="text-4xl md:text-6xl font-serif mb-6" data-v-3caf68dd> Ready to grow, learn, and thrive? </h2><p class="mb-6 text-lg md:text-xl" data-v-3caf68dd> Get in touch to explore our mental health webinars, podcasts, and resources. </p>`);
+      _push(ssrRenderComponent(_component_BlackButton, { label: "Contact us" }, null, _parent));
+      _push(`</div></section><footer class="bg-[#ca4e00] text-white py-10 px-6" data-v-3caf68dd><div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center mb-6 space-y-4 md:space-y-0" data-v-3caf68dd><div class="flex items-center space-x-4" data-v-3caf68dd><span data-v-3caf68dd>Follow us</span><a href="https://www.instagram.com/think.tribe/" target="_blank" aria-label="Instagram" data-v-3caf68dd><img${ssrRenderAttr("src", _imports_0)} alt="Instagram" class="h-8" data-v-3caf68dd></a></div><div class="text-sm text-gray-200" data-v-3caf68dd>© 2025 ThinkTribe. All Rights Reserved.</div><div class="space-x-4 text-sm" data-v-3caf68dd></div></div><hr class="border-white opacity-10 mb-6" data-v-3caf68dd><p class="text-xs text-white-400 mt-6" data-v-3caf68dd> Empowering minds through learning and connection. Together, we thrive. </p></footer></div>`);
+    };
+  }
+});
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/index.vue");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-3caf68dd"]]);
+export {
+  index as default
+};
+//# sourceMappingURL=index-B4AiWYQW.js.map

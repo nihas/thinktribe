@@ -2,7 +2,7 @@
     <div class="font-sans text-gray-800">
 
         <section class="relative h-48 md:h-96 bg-cover bg-center flex items-center justify-center"
-            style="background-image: url('/images/banner.png')">
+            :style="`background-image: url('${baseURL}/images/banner.png')`">
             <!-- Dark overlay -->
             <div class="absolute inset-0 bg-black/60"></div>
 
@@ -24,7 +24,7 @@
         <!-- 🟣 Hero Section -->
         <section class="bg-pink-50 py-16 px-6 text-center">
             <div class="max-w-4xl mx-auto">
-                <h1 class="text-4xl md:text-5xl font-bold text-pink-700 mb-4">Your Tribe for Mental Wellness</h1>
+                <h1 class="text-4xl md:text-5xl font-bold text-[#fd620e] mb-4">Your Tribe for Mental Wellness</h1>
                 <p class="text-lg text-gray-700">
                     Welcome to ThinkTribe. We know that navigating mental health can feel isolating. That’s why we built
                     a
@@ -105,6 +105,7 @@
 </template>
 
 <script setup>
+const baseURL = useRuntimeConfig().app.baseURL
 const openWhatsApp = () => {
     const phoneNumber = '917025016081' // Replace with your number (country code + number)
     const message = `Hello!`

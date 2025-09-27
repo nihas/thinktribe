@@ -1,6 +1,6 @@
 <template>
   <section class="relative h-48 md:h-96 bg-cover bg-center flex items-center justify-center"
-    style="background-image: url('/images/banner.png')">
+    :style="`background-image: url('${baseURL}/images/banner.png')`">
     <!-- Dark overlay -->
     <div class="absolute inset-0 bg-black/60"></div>
 
@@ -108,14 +108,15 @@
 
 <script setup>
 import { computed } from 'vue'
+const baseURL = useRuntimeConfig().app.baseURL
 
 // Dummy data, replace with your actual data or props
-const bannerImage = '/images/webinar-1234.jpg' // example path
+const bannerImage = `${baseURL}/images/webinar-1234.jpg` // example path
 const title = 'The Roadmap to Publishing in Social Science'
 const description =
   'Are you a postgraduate student or recent graduate in the social sciences looking to elevate your academic profile? Your dissertation holds invaluable research—it’s time to move it from a university archive to a respected academic journal. \n\nThis crucial webinar, hosted by THINK TRIBE, is designed to demystify the complex process of academic publishing for first-time authors. We will provide you with a clear, step-by-step roadmap to successfully converting your lengthy thesis into a concise, peer-review-ready article.'
 const speaker = {
-  image: '/images/nikhil.png',
+  image: `${baseURL}/images/nikhil.png`,
   name: 'Nikhil Zebu',
   designation: 'Psychologist & Research Scholar',
   socialLinks: [
