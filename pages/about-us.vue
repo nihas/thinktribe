@@ -2,7 +2,7 @@
     <div class="font-sans text-gray-800">
 
         <section class="relative h-48 md:h-96 bg-cover bg-center flex items-center justify-center"
-            :style="`background-image: url('${baseURL}/images/banner.png')`">
+            :style="`background-image: url('/images/banner.png')`">
             <!-- Dark overlay -->
             <div class="absolute inset-0 bg-black/60"></div>
 
@@ -105,7 +105,6 @@
 </template>
 
 <script setup>
-const baseURL = useRuntimeConfig().app.baseURL
 const openWhatsApp = () => {
     const phoneNumber = '917025016081' // Replace with your number (country code + number)
     const message = `Hello!`

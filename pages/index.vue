@@ -14,7 +14,7 @@
       <!-- <Navbar class="absolute top-0 left-0 right-0 z-20" /> -->
       <!-- Background Video -->
       <video autoplay muted loop playsinline class="absolute w-full h-full object-cover z-0">
-        <source :src="`${baseURL}/white_sands.mp4`" type="video/mp4" />
+        <source src="/white_sands.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -139,7 +139,7 @@
       
       <!-- Webinar Card -->
       <div class="bg-white rounded-lg shadow-lg overflow-hidden border max-w-sm">
-        <img :src="`${baseURL}/images/webinar-1234.jpg`" alt="Webinar Topic" class="w-full h-48 object-cover">
+        <img src="/images/webinar-1234.jpg" alt="Webinar Topic" class="w-full h-48 object-cover">
         
         <div class="p-6">
           <p class="text-sm text-gray-500 mb-2">September 27, 2025</p>
@@ -147,7 +147,7 @@
           <p class="text-gray-600 text-sm mb-4">
             Are you a postgraduate student or a recent graduate wondering what to do with your dissertation after submission?
           </p>
-          <a :href="`${baseURL}/webinar/roadmap-to-publishing-social-science`" class="inline-block px-4 py-2 text-sm bg-[#fd620e] text-white rounded hover:bg-[#e1550c] transition">
+          <a href="/webinar/roadmap-to-publishing-social-science" class="inline-block px-4 py-2 text-sm bg-[#fd620e] text-white rounded hover:bg-[#e1550c] transition">
             Learn More
           </a>
         </div>
@@ -190,7 +190,7 @@
     <section class="relative h-[600px] w-full overflow-hidden text-white">
       <!-- Video Background -->
       <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
-        <source :src="`${baseURL}/white_sands.mp4`" type="video/mp4" />
+        <source src="/white_sands.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -256,7 +256,6 @@
 </template>
 
 <script setup lang="ts">
-const baseURL = useRuntimeConfig().app.baseURL
 </script>
 
 <style scoped>

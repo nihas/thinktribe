@@ -2,7 +2,7 @@
   <nav class="flex items-center justify-between px-6 py-4 bg-white/80 backdrop-blur-md shadow-md rounded-full m-4 max-w-6xl mx-auto">
     <div class="flex items-center space-x-2">
   <img
-    :src="`${baseURL}/images/logo.png`"
+    src="/images/logo.png"
     alt="Think Tribe Logo"
     class="h-12 w-auto"    
   />
@@ -12,8 +12,8 @@
     
     <!-- Desktop Menu -->
     <ul class="hidden md:flex items-center space-x-6 text-sm text-gray-800 font-medium">
-      <li><a :href="`${baseURL}/`" class="hover:text-green-700">Home</a></li>
-      <li><a :href="`${baseURL}/about-us`" class="hover:text-green-700">About Us</a></li>
+      <li><a href="/" class="hover:text-green-700">Home</a></li>
+      <li><a href="/about-us" class="hover:text-green-700">About Us</a></li>
       <!-- <NuxtLink to="/teams" class="hover:underline">Teams</NuxtLink> -->
       <!-- <li><a href="#" class="hover:text-green-700">Services</a></li>
       <li><a href="#" class="hover:text-green-700">Fees</a></li>
@@ -43,8 +43,8 @@
 
     <!-- Mobile Menu -->
     <div v-if="isOpen" class="absolute top-20 left-4 right-4 bg-white rounded-xl shadow-lg z-50 flex flex-col space-y-4 p-6 md:hidden">
-      <a :href="`${baseURL}/`" class="hover:text-green-700">Home</a>
-      <a :href="`${baseURL}/about-us`" class="hover:text-green-700">About Us</a>
+      <a href="/" class="hover:text-green-700">Home</a>
+      <a href="/about-us" class="hover:text-green-700">About Us</a>
       <!-- <a href="#" class="hover:text-green-700">Team</a>
       <a href="#" class="hover:text-green-700">Services</a>
       <a href="#" class="hover:text-green-700">Fees</a>
@@ -63,7 +63,6 @@
 <script setup>
 import { ref } from 'vue'
 const isOpen = ref(false)
-const baseURL = useRuntimeConfig().app.baseURL
 
 
 const openWhatsApp = () => {
