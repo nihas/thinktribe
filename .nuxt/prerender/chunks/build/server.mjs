@@ -1,32 +1,32 @@
-import { defineComponent, mergeProps, hasInjectionContext, getCurrentInstance, ref, inject, h, Suspense, Fragment, useSSRContext, createApp, provide, shallowReactive, toRef, onErrorCaptured, onServerPrefetch, unref, createVNode, resolveDynamicComponent, reactive, effectScope, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, defineAsyncComponent, getCurrentScope } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/vue/index.mjs';
-import { $fetch } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/ofetch/dist/node.mjs';
+import { defineComponent, mergeProps, hasInjectionContext, getCurrentInstance, ref, inject, h, Suspense, Fragment, useSSRContext, createApp, provide, shallowReactive, toRef, onErrorCaptured, onServerPrefetch, unref, createVNode, resolveDynamicComponent, reactive, effectScope, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, defineAsyncComponent, getCurrentScope } from 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/vue/index.mjs';
+import { $fetch } from 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/ofetch/dist/node.mjs';
 import { b as baseURL, p as publicAssetsURL } from '../_/renderer.mjs';
-import { createHooks } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/hookable/dist/index.mjs';
-import { getContext, executeAsync } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/unctx/dist/index.mjs';
-import { sanitizeStatusCode, createError as createError$1, appendHeader } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/h3/dist/index.mjs';
-import { RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/vue-router/dist/vue-router.node.mjs';
-import { toRouteMatcher, createRouter as createRouter$1 } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/radix3/dist/index.mjs';
-import { defu } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/defu/dist/defu.mjs';
-import { hasProtocol, isScriptProtocol, joinURL, withQuery } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/ufo/dist/index.mjs';
-import { ssrRenderAttrs, ssrInterpolate, ssrRenderComponent, ssrRenderSuspense, ssrRenderVNode, ssrRenderAttr } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/vue/server-renderer/index.mjs';
-import 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { createHooks } from 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/hookable/dist/index.mjs';
+import { getContext, executeAsync } from 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/unctx/dist/index.mjs';
+import { sanitizeStatusCode, createError as createError$1, appendHeader } from 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/h3/dist/index.mjs';
+import { RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/vue-router/dist/vue-router.node.mjs';
+import { toRouteMatcher, createRouter as createRouter$1 } from 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/radix3/dist/index.mjs';
+import { defu } from 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/defu/dist/defu.mjs';
+import { hasProtocol, isScriptProtocol, joinURL, withQuery } from 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/ufo/dist/index.mjs';
+import { ssrRenderAttrs, ssrInterpolate, ssrRenderComponent, ssrRenderSuspense, ssrRenderVNode, ssrRenderAttr } from 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/vue/server-renderer/index.mjs';
+import 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import '../nitro/nitro.mjs';
-import 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/destr/dist/index.mjs';
-import 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/node-mock-http/dist/index.mjs';
-import 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/unstorage/dist/index.mjs';
-import 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/unstorage/drivers/fs.mjs';
-import 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/unstorage/drivers/fs-lite.mjs';
-import 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/unstorage/drivers/lru-cache.mjs';
-import 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/ohash/dist/index.mjs';
-import 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/klona/dist/index.mjs';
-import 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/scule/dist/index.mjs';
+import 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/destr/dist/index.mjs';
+import 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/node-mock-http/dist/index.mjs';
+import 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/unstorage/dist/index.mjs';
+import 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/unstorage/drivers/fs.mjs';
+import 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/unstorage/drivers/fs-lite.mjs';
+import 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/unstorage/drivers/lru-cache.mjs';
+import 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/ohash/dist/index.mjs';
+import 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/klona/dist/index.mjs';
+import 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/scule/dist/index.mjs';
 import 'node:fs';
 import 'node:url';
-import 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/pathe/dist/index.mjs';
-import 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/unhead/dist/server.mjs';
-import 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/devalue/index.js';
-import 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/unhead/dist/utils.mjs';
-import 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/unhead/dist/plugins.mjs';
+import 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/pathe/dist/index.mjs';
+import 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/unhead/dist/server.mjs';
+import 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/devalue/index.js';
+import 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/unhead/dist/utils.mjs';
+import 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/unhead/dist/plugins.mjs';
 
 if (!globalThis.$fetch) {
   globalThis.$fetch = $fetch.create({
@@ -397,17 +397,17 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-6Bwg57ox.mjs')
+    component: () => import('./index-Bc9RMtqG.mjs')
   },
   {
     name: "teams",
     path: "/teams",
-    component: () => import('./teams-W9b3Czb2.mjs')
+    component: () => import('./teams-Cm9vdLD5.mjs')
   },
   {
     name: "about-us",
     path: "/about-us",
-    component: () => import('./about-us-B92NXOBi.mjs')
+    component: () => import('./about-us-Bvgy62kn.mjs')
   },
   {
     name: "webinar-EventDetails",
@@ -415,9 +415,14 @@ const _routes = [
     component: () => import('./EventDetails-DpatvVSH.mjs')
   },
   {
+    name: "webinar-conquer-the-net-strategy-session",
+    path: "/webinar/conquer-the-net-strategy-session",
+    component: () => import('./conquer-the-net-strategy-session-CoJrXOVB.mjs')
+  },
+  {
     name: "webinar-roadmap-to-publishing-social-science",
     path: "/webinar/roadmap-to-publishing-social-science",
-    component: () => import('./roadmap-to-publishing-social-science-AoPHEytE.mjs')
+    component: () => import('./roadmap-to-publishing-social-science-D4ruxIuU.mjs')
   }
 ];
 const ROUTE_KEY_PARENTHESES_RE = /(:\w+)\([^)]+\)/g;
@@ -1023,8 +1028,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-Bf0-yVOr.mjs'));
-    const _Error = defineAsyncComponent(() => import('./error-500-DkCMuhje.mjs'));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-CPLyG6Ft.mjs'));
+    const _Error = defineAsyncComponent(() => import('./error-500-BGZVjzQb.mjs'));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -1106,5 +1111,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { _export_sfc as _, _sfc_main$4 as a, useNuxtApp as b, useRuntimeConfig as c, nuxtLinkDefaults as d, entry$1 as default, navigateTo as n, resolveRouteObject as r, tryUseNuxtApp as t, useRouter as u };
+export { _export_sfc as _, _sfc_main$4 as a, useRouter as b, useNuxtApp as c, nuxtLinkDefaults as d, entry$1 as default, navigateTo as n, resolveRouteObject as r, tryUseNuxtApp as t, useRuntimeConfig as u };
 //# sourceMappingURL=server.mjs.map

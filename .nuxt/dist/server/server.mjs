@@ -1,13 +1,13 @@
 import { shallowReactive, reactive, effectScope, getCurrentScope, hasInjectionContext, getCurrentInstance, inject, toRef, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, defineComponent, provide, h, ref, Suspense, Fragment, mergeProps, useSSRContext, defineAsyncComponent, unref, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, createApp } from "vue";
 import { $fetch } from "ofetch";
 import { baseURL, publicAssetsURL } from "#internal/nuxt/paths";
-import { createHooks } from "/Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/hookable/dist/index.mjs";
-import { getContext, executeAsync } from "/Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/unctx/dist/index.mjs";
-import { sanitizeStatusCode, createError as createError$1, appendHeader } from "/Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/h3/dist/index.mjs";
+import { createHooks } from "/Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/hookable/dist/index.mjs";
+import { getContext, executeAsync } from "/Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/unctx/dist/index.mjs";
+import { sanitizeStatusCode, createError as createError$1, appendHeader } from "/Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/h3/dist/index.mjs";
 import { START_LOCATION, createMemoryHistory, createRouter as createRouter$1, RouterView } from "vue-router";
-import { toRouteMatcher, createRouter } from "/Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/radix3/dist/index.mjs";
-import { defu } from "/Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/defu/dist/defu.mjs";
-import { hasProtocol, joinURL, withQuery, isScriptProtocol } from "/Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/ufo/dist/index.mjs";
+import { toRouteMatcher, createRouter } from "/Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/radix3/dist/index.mjs";
+import { defu } from "/Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/defu/dist/defu.mjs";
+import { hasProtocol, joinURL, withQuery, isScriptProtocol } from "/Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/ufo/dist/index.mjs";
 import { ssrRenderAttrs, ssrInterpolate, ssrRenderAttr, ssrRenderComponent, ssrRenderSuspense, ssrRenderVNode } from "vue/server-renderer";
 if (!globalThis.$fetch) {
   globalThis.$fetch = $fetch.create({
@@ -378,17 +378,17 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-6Bwg57ox.js")
+    component: () => import("./_nuxt/index-Bc9RMtqG.js")
   },
   {
     name: "teams",
     path: "/teams",
-    component: () => import("./_nuxt/teams-W9b3Czb2.js")
+    component: () => import("./_nuxt/teams-Cm9vdLD5.js")
   },
   {
     name: "about-us",
     path: "/about-us",
-    component: () => import("./_nuxt/about-us-B92NXOBi.js")
+    component: () => import("./_nuxt/about-us-Bvgy62kn.js")
   },
   {
     name: "webinar-EventDetails",
@@ -396,9 +396,14 @@ const _routes = [
     component: () => import("./_nuxt/EventDetails-DpatvVSH.js")
   },
   {
+    name: "webinar-conquer-the-net-strategy-session",
+    path: "/webinar/conquer-the-net-strategy-session",
+    component: () => import("./_nuxt/conquer-the-net-strategy-session-CoJrXOVB.js")
+  },
+  {
     name: "webinar-roadmap-to-publishing-social-science",
     path: "/webinar/roadmap-to-publishing-social-science",
-    component: () => import("./_nuxt/roadmap-to-publishing-social-science-AoPHEytE.js")
+    component: () => import("./_nuxt/roadmap-to-publishing-social-science-D4ruxIuU.js")
   }
 ];
 const ROUTE_KEY_PARENTHESES_RE = /(:\w+)\([^)]+\)/g;
@@ -1011,8 +1016,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import("./_nuxt/error-404-Bf0-yVOr.js"));
-    const _Error = defineAsyncComponent(() => import("./_nuxt/error-500-DkCMuhje.js"));
+    const _Error404 = defineAsyncComponent(() => import("./_nuxt/error-404-CPLyG6Ft.js"));
+    const _Error = defineAsyncComponent(() => import("./_nuxt/error-500-BGZVjzQb.js"));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -1096,13 +1101,13 @@ const entry$1 = (ssrContext) => entry(ssrContext);
 export {
   _export_sfc as _,
   _sfc_main$4 as a,
-  useNuxtApp as b,
-  useRuntimeConfig as c,
+  useRouter as b,
+  useNuxtApp as c,
   nuxtLinkDefaults as d,
   entry$1 as default,
   navigateTo as n,
   resolveRouteObject as r,
   tryUseNuxtApp as t,
-  useRouter as u
+  useRuntimeConfig as u
 };
 //# sourceMappingURL=server.mjs.map

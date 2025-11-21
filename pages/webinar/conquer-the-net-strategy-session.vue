@@ -1,6 +1,6 @@
 <template>
   <section class="relative h-48 md:h-96 bg-cover bg-center flex items-center justify-center"
-    :style="`background-image: url('/images/banner.png')`">
+    :style="`background-image: url('${baseURL}/images/banner.png')`">
     <!-- Dark overlay -->
     <div class="absolute inset-0 bg-black/60"></div>
 
@@ -82,7 +82,7 @@
           <div class="td-schedule-details-form-quantity inline-block mt-4 mb-4">
             <!-- <span class="block font-bold text-[18px] text-black leading-none">UG & PG Students: ₹100.00</span> -->
             <!-- <span class="block font-bold text-[18px] text-black leading-none mt-2">Others: ₹200.00</span> -->
-            <span class="block text-[18px] text-black leading-none">
+            <!-- <span class="block text-[18px] text-black leading-none">
               <span class="font-normal">UG & PG Students:</span>
               <span class="font-bold"> ₹100.00</span>
             </span>
@@ -90,14 +90,14 @@
             <span class="block text-[18px] text-black leading-none mt-2">
               <span class="font-normal">Others:</span>
               <span class="font-bold"> ₹200.00</span>
-            </span>
-            <span class="block text-sm text-gray-500 mt-2">Paid Webinar</span>
+            </span> -->
+            <span class="block text-sm text-gray-500 mt-2">FREE Webinar</span>
           </div>
 
           <div class="mt-2">
-            <button type="submit" disabled
+            <button type="submit" @click="openRegistrationLink"
               class="w-full bg-[#fd620e] text-white rounded-[6px] px-[30px] py-[21px] shadow-[0_4px_10px_rgba(169,33,119,0.4)] hover:bg-pink-800 transition duration-200">
-              Registration Closed
+              Register Now
             </button>
           </div>
         </div>
@@ -108,21 +108,22 @@
 
 <script setup>
 import { computed } from 'vue'
+const baseURL = useRuntimeConfig().app.baseURL
 
 // Dummy data, replace with your actual data or props
-const bannerImage = '/images/webinar-1234.jpg' // example path
-const title = 'The Roadmap to Publishing in Social Science'
+const bannerImage = `${baseURL}/images/webinar2.jpg` // example path
+const title = 'Conquer the NET: The Ultimate Strategy Session'
 const description =
-  'Are you a postgraduate student or recent graduate in the social sciences looking to elevate your academic profile? Your dissertation holds invaluable research—it’s time to move it from a university archive to a respected academic journal. \n\nThis crucial webinar, hosted by THINK TRIBE, is designed to demystify the complex process of academic publishing for first-time authors. We will provide you with a clear, step-by-step roadmap to successfully converting your lengthy thesis into a concise, peer-review-ready article.'
+  'UGC NET aspirants! This webinar is designed to equip you with the strategies and insights needed to excel in your upcoming exams. Join expert educator Aysha Hamna P for an exclusive session that will cover essential tips, resources, and a roadmap to success.'
 const speaker = {
-  image: '/images/nikhil.png',
-  name: 'Nikhil Zebu',
-  designation: 'Psychologist & Research Scholar',
+  image: `${baseURL}/images/aysha.png`,
+  name: 'Aysha Hamns P',
+  designation: 'UGC NET & GATE Qualified | Psychology Educator',
   socialLinks: [
     // { name: 'twitter', url: 'https://twitter.com/janedoe' },
-    { name: 'linkedin', url: 'https://linkedin.com/in/janedoe' },
+    { name: 'linkedin', url: 'https://linkedin.com/in/aysha-hamna-p-9b0941365' },
     // { name: 'github', url: 'https://github.com/janedoe' },
-    { name: 'instagram', url: 'https://instagram.com/janedoe' }
+    { name: 'instagram', url: 'https://instagram.com/aysh24_' }
   ]
 }
 
@@ -131,11 +132,11 @@ const formattedDescription = computed(() =>
 )
 
 const webinarDetails = {
-  date: 'September 27, 2025',
+  date: 'November 22, 2025',
   time: '7:00 PM (IST)',
   // duration: '2 hours',
   platform: 'Online (Google Meet)',
-  registrationLink: 'https://example.com/register'
+  registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc7qPRbm6GGBa4VeLPDdgc_Q8dVrCaxEB3l-ndRjW8PVkdB1Q/viewform'
 }
 
 // Social Icons as inline SVG components (you can replace with your favorite icon set)

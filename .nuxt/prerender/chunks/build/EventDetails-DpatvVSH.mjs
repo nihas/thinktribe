@@ -1,5 +1,5 @@
-import { mergeProps, createVNode, resolveDynamicComponent, useSSRContext } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/vue/index.mjs';
-import { ssrRenderAttrs, ssrRenderAttr, ssrInterpolate, ssrRenderList, ssrRenderVNode } from 'file:///Users/nihasnizar/Downloads/ONE/thinktribe/node_modules/vue/server-renderer/index.mjs';
+import { mergeProps, createVNode, resolveDynamicComponent, useSSRContext } from 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/vue/index.mjs';
+import { ssrRenderAttrs, ssrRenderAttr, ssrInterpolate, ssrRenderList, ssrRenderVNode } from 'file:///Users/nihasnizar/Downloads/ONE/ghpage/thinktribe/node_modules/vue/server-renderer/index.mjs';
 
 const bannerImage = "/images/webinar-banner.jpg";
 const title = "Mastering Nuxt 3 and TailwindCSS for Modern Web Development";
