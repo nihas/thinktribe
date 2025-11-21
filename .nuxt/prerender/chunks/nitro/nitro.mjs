@@ -640,7 +640,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/thinktribe",
-    "buildId": "9eb1123f-7dc7-4435-86b5-c46298867967",
+    "buildId": "1136a169-7f8c-411f-9665-3c715c000769",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
