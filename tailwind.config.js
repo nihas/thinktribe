@@ -11,7 +11,10 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Poppins', 'sans-serif']
-      }
+      },
+      animation: {
+        'spin-slow': 'spin 12s linear infinite',
+      },
     },
   },
   plugins: [],

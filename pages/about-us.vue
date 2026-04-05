@@ -21,85 +21,76 @@
             </div>
         </section>
 
-        <!-- 🟣 Hero Section -->
-        <section class="bg-pink-50 py-16 px-6 text-center">
-            <div class="max-w-4xl mx-auto">
-                <h1 class="text-4xl md:text-5xl font-bold text-[#fd620e] mb-4">Your Tribe for Mental Wellness</h1>
-                <p class="text-lg text-gray-700">
-                    Welcome to ThinkTribe. We know that navigating mental health can feel isolating. That’s why we built
-                    a
-                    supportive, inclusive platform to connect you with the tools, knowledge, and experts you need.
-                </p>
-            </div>
-        </section>
+        <section class="relative bg-gradient-to-b from-[#F9F7F1] to-[#EAF2F1] py-24 px-6">
+  <div class="max-w-7xl mx-auto text-center">
 
-        <!-- 🔵 Who We Are -->
-        <section class="bg-white py-16 px-6">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-semibold text-gray-900 mb-4">Who We Are</h2>
-                <p class="text-gray-700 leading-relaxed text-lg">
-                    ThinkTribe is a platform dedicated to transforming how you approach mental wellness. We believe that
-                    robust, accessible, and high-quality mental health support should be available to everyone,
-                    everywhere.
-                </p>
-            </div>
-        </section>
+    <!-- HERO / PAGE TITLE -->
+    <h1 class="text-5xl sm:text-6xl font-bold text-[#2E4B42] mb-6">
+      Your Tribe for Mental Wellness
+    </h1>
+    <p class="text-[#2E4B42]/80 text-lg sm:text-xl max-w-2xl mx-auto mb-16">
+      ThinkTribe is building a space where psychology is learned, experienced, and lived.
+      Through Cognitive Studio, we provide psychology courses, UGC NET preparation, MCQs, and PYQ discussions designed to help students and aspirants build strong conceptual understanding.
+    </p>
 
-        <!-- 🟢 Our Mission -->
-        <section class="bg-gray-50 py-16 px-6">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-semibold text-gray-900 mb-4">Our Mission</h2>
-                <p class="text-gray-700 leading-relaxed text-lg">
-                    At ThinkTribe, we are driven by a singular mission: to make mental health support more accessible,
-                    inclusive, and engaging for all.
-                    <br /><br />
-                    We've created a supportive online ecosystem where individuals and communities can truly learn, heal,
-                    and thrive together.
-                    We firmly believe that mental health is a necessity, not a luxury, and we are committed to making
-                    this a shared journey of growth and understanding.
-                </p>
-            </div>
-        </section>
+    <!-- WHO WE ARE -->
+    <div class="mb-24 text-left md:text-left px-10 py-8 rounded-3xl bg-white/90 shadow-lg">
+      <h2 class="text-4xl font-bold text-[#2E4B42] mb-4">Who We Are</h2>
+      <p class="text-[#2E4B42]/80 text-lg max-w-3xl">
+        ThinkTribe is more than just an educational platform — we are a community of learners, educators, and mental wellness enthusiasts. With Tribe Talks, we explore psychology beyond textbooks — through podcasts, articles, and conversations that connect ideas to everyday life.
+      </p>
+    </div>
 
-        <!-- 🟡 What We Offer -->
-        <section class="bg-white py-16 px-6">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-semibold text-gray-900 mb-6">What We Offer</h2>
-                <p class="text-gray-700 text-lg mb-6">
-                    ThinkTribe brings together the best of psychology-based learning into one seamless experience:
-                </p>
-                <ul class="list-disc space-y-4 pl-6 text-gray-700 text-base">
-                    <li>
-                        <strong>Expert-Led Therapy:</strong> Connect with licensed professionals for personalized
-                        support.
-                    </li>
-                    <li>
-                        <strong>Webinars & Learning:</strong> Engage with cutting-edge, psychology-based educational
-                        content.
-                    </li>
-                    <li>
-                        <strong>Insightful Podcasts:</strong> Listen to curated discussions designed to expand your mind
-                        and perspective.
-                    </li>
-                </ul>
-            </div>
-        </section>
+    <!-- OUR MISSION -->
+    <div class="mb-24 text-left md:text-left px-10 py-8 rounded-3xl bg-gradient-to-r from-[#3BAF9F]/20 to-[#F4C36A]/20 shadow-lg">
+      <h2 class="text-4xl font-bold text-[#2E4B42] mb-4">Our Mission</h2>
+      <p class="text-[#2E4B42]/80 text-lg max-w-3xl">
+        Our mission is to make psychology learning accessible, engaging, and practical. We are also expanding into guided therapy and mental wellness support, making ThinkTribe a space where learning meets real-world healing and growth.
+      </p>
+    </div>
 
-        <!-- 🧡 Call to Action -->
-        <section class="bg-pink-100 py-16 px-6 text-center">
-            <div class="max-w-3xl mx-auto">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Join the Tribe</h3>
-                <p class="text-gray-700 text-lg mb-6">
-                    We’re here to dismantle the barriers to care and make your journey of healing and growth a shared
-                    experience.
-                    Let’s learn, heal, and thrive—together.
-                </p>
-                <NuxtLink @click="openWhatsApp"
-                    class="inline-block bg-pink-700 text-white px-6 py-3 rounded-lg shadow hover:bg-pink-800 transition">
-                    Contact Us
-                </NuxtLink>
-            </div>
-        </section>
+    <!-- WHAT WE OFFER -->
+    <div class="mb-24 text-left md:text-left">
+      <h2 class="text-4xl font-bold text-[#2E4B42] mb-6 text-center">What We Offer</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-gradient-to-br from-[#2E4B42] to-[#1F352F] text-white p-6 rounded-3xl shadow-xl hover:scale-105 transform transition">
+          <h3 class="text-xl font-semibold mb-2">Cognitive Studio</h3>
+          <p class="text-white/80 text-sm">
+            Structured courses, PYQ discussion classes, and NET exam preparation MCQs for psychology students.
+          </p>
+        </div>
+
+        <div class="bg-[#3BAF9F] text-white p-6 rounded-3xl shadow-lg hover:scale-105 transform transition">
+          <h3 class="text-xl font-semibold mb-2">Tribe Talks</h3>
+          <p class="text-white/80 text-sm">
+            Podcasts, YouTube videos, and articles focused on psychology, mental wellness, and personal growth.
+          </p>
+        </div>
+
+        <div class="bg-[#F4C36A] text-[#2E4B42] p-6 rounded-3xl shadow-lg hover:scale-105 transform transition">
+          <h3 class="text-xl font-semibold mb-2">Guided Therapy & Wellness</h3>
+          <p class="text-[#2E4B42]/90 text-sm">
+            Access to mental wellness support, therapy sessions, and practical guidance to nurture holistic growth.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- JOIN THE TRIBE -->
+    <div class="text-center mb-24">
+      <h2 class="text-4xl font-bold text-[#2E4B42] mb-6">Join the Tribe</h2>
+      <p class="text-[#2E4B42]/80 text-lg max-w-2xl mx-auto mb-8">
+        Become part of a community that values learning, growth, and mental well-being. Stay updated on new courses, webinars, and tribe talks.
+      </p>
+      <button class="bg-gradient-to-r from-[#2E4B42] to-[#1F352F] text-white px-10 py-4 rounded-full font-semibold hover:from-[#3BAF9F] hover:to-[#F4C36A] transition active:scale-95 shadow-lg">
+        Join Now
+      </button>
+    </div>
+
+  </div>
+</section>
 
     </div>
 </template>

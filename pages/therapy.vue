@@ -1,0 +1,404 @@
+<template>
+
+    <section class="relative h-48 md:h-96 bg-cover bg-center flex items-center justify-center"
+        :style="`background-image: url('/images/banner.png')`">
+        <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black/60"></div>
+
+
+        <!-- Title + Breadcrumbs -->
+        <div class="relative text-center text-white px-4">
+            <h1 class="text-2xl md:text-4xl font-bold">Therapy Space</h1>
+            <nav class="mt-2 text-xs md:text-sm">
+                <ul class="flex items-center justify-center gap-1 md:gap-2 flex-wrap">
+                    <li>
+                        <a href="/" class="hover:underline">Home</a>
+                        > <span class="text-gray-400">Therapy Space</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section class="bg-[#F9F7F1] py-24 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+
+            <!-- HERO / INTRO -->
+            <div class="mb-20">
+                <h1 class="text-2xl sm:text-5xl font-bold text-[#2E4B42] mb-6">
+                    We'll match an expert who understands your needs.
+                </h1>
+                <p class="text-[#2E4B42]/80 text-lg sm:text-xl max-w-3xl mx-auto">
+                    Connect with trained professionals and begin your journey towards better mental well-being.
+                </p>
+            </div>
+
+            <!-- STARTING THERAPY -->
+            <div
+                class="mb-20 px-6 py-12 bg-gradient-to-br from-[#3BAF9F]/20 to-[#F4C36A]/20 rounded-3xl shadow-lg text-left md:text-left">
+                <h2 class="text-4xl font-bold text-[#2E4B42] mb-4">Starting Therapy at ThinkTribe</h2>
+                <p class="text-[#2E4B42]/80 text-lg">
+                    Confused or have doubts? We’ll guide you through. Learn how therapy helps you understand yourself,
+                    manage stress, and build resilience.
+                </p>
+                <!-- <a href="#learn-therapy"
+                    class="inline-block bg-[#2E4B42] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#1F352F] transition">
+                    Learn How Therapy Helps →
+                </a> -->
+            </div>
+
+
+
+
+            <section class="bg-[#F9F7F1] py-10 px-6">
+                <div class="max-w-6xl mx-auto">
+
+                    <!-- Section Header -->
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl sm:text-5xl font-bold text-[#2E4B42] mb-4">
+                            Learn How Therapy Helps
+                        </h2>
+                        <p class="text-[#2E4B42]/80 text-lg max-w-2xl mx-auto">
+                            Therapy is a safe space to understand yourself, build coping skills, and improve mental
+                            well-being.
+                        </p>
+                    </div>
+
+                    <!-- FAQ Cards -->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                        <!-- Card 1 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer group">
+                            <div class="flex items-center gap-4 mb-4">
+                                <img src="https://assets.theinnerhour.com/compressed/brain_1769339080742_4icjbn7.webp"
+                                    alt="Card icon" class="w-12 h-12">
+                                <h5 class="text-lg font-semibold text-[#2E4B42] group-hover:text-[#1f352f]">
+                                    Challenge Negative Thoughts
+                                </h5>
+                            </div>
+                            <p class="text-[#2E4B42]/70 text-sm">
+                                Gain practical tools to identify and break unhelpful thinking patterns.
+                            </p>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer group">
+                            <div class="flex items-center gap-4 mb-4">
+                                <img src="https://assets.theinnerhour.com/compressed/brain_1769339080742_4icjbn7.webp"
+                                    alt="Card icon" class="w-12 h-12">
+                                <h5 class="text-lg font-semibold text-[#2E4B42] group-hover:text-[#1f352f]">
+                                    Understand Your Emotions
+                                </h5>
+                            </div>
+                            <p class="text-[#2E4B42]/70 text-sm">
+                                Explore your feelings and thoughts clearly, making daily decisions easier.
+                            </p>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer group">
+                            <div class="flex items-center gap-4 mb-4">
+                                <img src="https://assets.theinnerhour.com/compressed/brain_1769339080742_4icjbn7.webp"
+                                    alt="Card icon" class="w-12 h-12">
+                                <h5 class="text-lg font-semibold text-[#2E4B42] group-hover:text-[#1f352f]">
+                                    Build Coping Skills
+                                </h5>
+                            </div>
+                            <p class="text-[#2E4B42]/70 text-sm">
+                                Develop strategies to manage stress, anxiety, and tough situations effectively.
+                            </p>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer group">
+                            <div class="flex items-center gap-4 mb-4">
+                                <img src="https://assets.theinnerhour.com/compressed/brain_1769339080742_4icjbn7.webp"
+                                    alt="Card icon" class="w-12 h-12">
+                                <h5 class="text-lg font-semibold text-[#2E4B42] group-hover:text-[#1f352f]">
+                                    Set Healthy Boundaries
+                                </h5>
+                            </div>
+                            <p class="text-[#2E4B42]/70 text-sm">
+                                Protect your time, energy, and peace of mind—without guilt.
+                            </p>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer group">
+                            <div class="flex items-center gap-4 mb-4">
+                                <img src="https://assets.theinnerhour.com/compressed/brain_1769339080742_4icjbn7.webp"
+                                    alt="Card icon" class="w-12 h-12">
+                                <h5 class="text-lg font-semibold text-[#2E4B42] group-hover:text-[#1f352f]">
+                                    Turn Overthinking Into Action
+                                </h5>
+                            </div>
+                            <p class="text-[#2E4B42]/70 text-sm">
+                                Move from constant rumination to meaningful steps aligned with your goals.
+                            </p>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer group">
+                            <div class="flex items-center gap-4 mb-4">
+                                <img src="https://assets.theinnerhour.com/compressed/brain_1769339080742_4icjbn7.webp"
+                                    alt="Card icon" class="w-12 h-12">
+                                <h5 class="text-lg font-semibold text-[#2E4B42] group-hover:text-[#1f352f]">
+                                    Heal Past Trauma
+                                </h5>
+                            </div>
+                            <p class="text-[#2E4B42]/70 text-sm">
+                                Process unresolved experiences safely and take steps toward recovery.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="bg-[#F9F7F1] py-20 px-6">
+                <div class="max-w-6xl mx-auto">
+
+                    <!-- Section Header -->
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl sm:text-5xl font-bold text-[#2E4B42] mb-4">
+                            Finding the Right Therapist
+                        </h2>
+                        <p class="text-[#2E4B42]/80 text-lg max-w-2xl mx-auto">
+                            Connecting with the right therapist can make a huge difference in your journey toward mental
+                            wellness. Here's how we guide you.
+                        </p>
+                    </div>
+
+                    <!-- Carousel / Cards -->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                        <!-- Card 1 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer group">
+                            <div class="flex items-center gap-4 mb-4">
+                                <img src="https://assets.theinnerhour.com/compressed/circle_icon_1769339083402_kc9vi8c.webp"
+                                    alt="Therapist icon" class="w-12 h-12">
+                                <h5 class="text-lg font-semibold text-[#2E4B42] group-hover:text-[#1f352f]">
+                                    Your Growth Partner
+                                </h5>
+                            </div>
+                            <p class="text-[#2E4B42]/70 text-sm">
+                                Therapists don’t just agree with you—they help reflect patterns you might miss,
+                                challenge
+                                unhelpful thoughts, and guide you toward meaningful growth.
+                            </p>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer group">
+                            <div class="flex items-center gap-4 mb-4">
+                                <img src="https://assets.theinnerhour.com/compressed/circle_icon_1769339083402_kc9vi8c.webp"
+                                    alt="Therapist icon" class="w-12 h-12">
+                                <h5 class="text-lg font-semibold text-[#2E4B42] group-hover:text-[#1f352f]">
+                                    Support & Tools
+                                </h5>
+                            </div>
+                            <p class="text-[#2E4B42]/70 text-sm">
+                                We connect you with therapists who understand and support you, equipping you with
+                                practical
+                                tools and exercises to gain confidence and independence.
+                            </p>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer group">
+                            <div class="flex items-center gap-4 mb-4">
+                                <img src="https://assets.theinnerhour.com/compressed/circle_icon_1769339083402_kc9vi8c.webp"
+                                    alt="Therapist icon" class="w-12 h-12">
+                                <h5 class="text-lg font-semibold text-[#2E4B42] group-hover:text-[#1f352f]">
+                                    Personalized Match
+                                </h5>
+                            </div>
+                            <p class="text-[#2E4B42]/70 text-sm mb-4">
+                                We focus on matching you with a therapist who suits your personality, needs, and
+                                preferences for
+                                the most effective and comfortable experience.
+                            </p>
+                            <button
+                                class="bg-[#2E4B42] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#1f352f] transition active:scale-95 shadow-md">
+                                Get Matched
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="bg-[#F9F7F1] py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-[#2E4B42] mb-4">Frequently Asked Questions</h2>
+        <p class="text-[#2E4B42]/80 text-lg">Get answers to common questions about therapy, how it works, and how to get started.</p>
+      </div>
+
+      <!-- FAQ Items -->
+      <div class="space-y-4">
+        <div
+          v-for="(faq, index) in faqList"
+          :key="index"
+          class="bg-white rounded-2xl shadow p-6"
+        >
+          <button
+            class="w-full text-left flex justify-between items-center text-[#2E4B42] font-semibold text-lg focus:outline-none"
+            @click="toggle(index)"
+          >
+            {{ faq.question }}
+            <span
+              class="accordion-icon transition-transform"
+              :class="{ 'rotate-180': faq.open }"
+            >
+              &#9662;
+            </span>
+          </button>
+          <div
+            class="mt-2 text-[#2E4B42]/70 text-sm"
+            v-show="faq.open"
+          >
+            {{ faq.answer }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+            <!-- NEED HELP CHOOSING -->
+            <div class="mb-20 px-6 py-12 bg-white rounded-3xl shadow-lg text-left md:text-left">
+                <h2 class="text-4xl font-bold text-[#2E4B42] mb-4">Need Help Choosing?</h2>
+                <p class="text-[#2E4B42]/80 text-lg mb-6">
+                    We’ve got you. Connect with our team and they will assist you in finding a therapist who suits your
+                    needs.
+                </p>
+                <a href="https://wa.me/+918714406679"
+                    class="inline-block bg-[#3BAF9F] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#2E8B7D] transition">
+                    Chat on WhatsApp
+                </a>
+            </div>
+
+            <!-- HELP SOMEONE -->
+            <div
+                class="mb-20 px-6 py-12 bg-gradient-to-r from-[#F4C36A]/30 to-[#F4C36A]/10 rounded-3xl shadow-lg text-left md:text-left">
+                <h2 class="text-4xl font-bold text-[#2E4B42] mb-4">Help Someone Take the First Step</h2>
+                <p class="text-[#2E4B42]/80 text-lg mb-6">
+                    Invite someone you care about to try therapy at ThinkTribe. When they complete their first session,
+                    you’ll receive a little thank-you gift from us.
+                </p>
+                <a href="#refer-friend"
+                    class="inline-block bg-[#2E4B42] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#1F352F] transition">
+                    Refer a Friend
+                </a>
+            </div>
+
+            <!-- STILL HAVE QUESTIONS -->
+            <div class="mb-20 px-6 py-12 bg-white rounded-3xl shadow-lg text-left md:text-left">
+                <h2 class="text-4xl font-bold text-[#2E4B42] mb-4">Still Have Questions?</h2>
+                <p class="text-[#2E4B42]/80 text-lg mb-6">
+                    Or just need to talk it through? We’re here to help, no matter what you’re looking for or where
+                    you’re starting from.
+                </p>
+                <p class="text-[#2E4B42]/80 text-lg mb-2">Reach out anytime at:</p>
+                <p class="text-[#2E4B42]/80 text-lg mb-1 font-medium">thinktribeco@gmail.com</p>
+                <p class="text-[#2E4B42]/80 text-lg font-medium">+91 8714406679</p>
+            </div>
+
+            <!-- CTA / FINAL JOIN -->
+            <div class="text-center">
+                <h2 class="text-4xl font-bold text-[#2E4B42] mb-6">Start Your Journey Today</h2>
+                <a href="#book-session"
+                    class="inline-block bg-gradient-to-r from-[#3BAF9F] to-[#2E4B42] text-white px-10 py-4 rounded-full font-semibold hover:from-[#2E8B7D] hover:to-[#1F352F] transition active:scale-95 shadow-lg">
+                    Book a Session
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+</template>
+
+<script setup>
+import { reactive } from 'vue'
+
+const faqList = reactive([
+  {
+    question: 'How often should I attend therapy?',
+    answer: 'Most people begin with weekly or every-other-week sessions to build consistency and trust. The frequency can be adjusted as you progress and based on your needs.',
+    open: false
+  },
+  {
+    question: 'Is therapy confidential?',
+    answer: 'Absolutely. Your sessions are private and secure. Our platform follows HIPAA and international standards, ensuring therapists maintain strict confidentiality.',
+    open: false
+  },
+  {
+    question: 'Can therapy help with stress, anxiety, or depression?',
+    answer: 'Yes! Therapy provides coping strategies, practical tools, and deeper insights to manage stress, anxiety, depression, and other mental health challenges.',
+    open: false
+  },
+  {
+    question: 'How long will it take to notice improvements?',
+    answer: 'Progress varies for everyone. Some see small changes within a few sessions, while deeper transformation takes time. Consistency is key.',
+    open: false
+  },
+  {
+    question: 'What happens in my first session?',
+    answer: 'Your therapist will discuss your concerns, personal history, and goals for therapy to understand your needs and plan the next steps.',
+    open: false
+  },
+  {
+    question: 'What if I don’t feel comfortable with my therapist?',
+    answer: 'It’s normal to take a few attempts to find the right fit. Our platform allows you to switch therapists easily until you feel supported and comfortable.',
+    open: false
+  },
+  {
+    question: 'How do I know if I need therapy?',
+    answer: 'If you find it challenging to manage emotions, stress, relationships, or daily life, therapy can help. You don’t need a crisis to seek support.',
+    open: false
+  },
+  {
+    question: 'How should I talk to family who don’t believe in therapy?',
+    answer: 'Explain that therapy is like healthcare for the mind, just as we see doctors for our body—it’s support for mental well-being.',
+    open: false
+  },
+  {
+    question: 'Should I tell my workplace about therapy?',
+    answer: 'This depends on your situation. Discuss with your therapist what is appropriate for you to share at work.',
+    open: false
+  },
+  {
+    question: 'Is online therapy in India effective?',
+    answer: 'Yes! Studies show online therapy can be just as effective as in-person sessions, while offering flexibility, convenience, and accessibility.',
+    open: false
+  }
+])
+
+function toggle(index) {
+  faqList[index].open = !faqList[index].open
+}
+</script>
+
+<style>
+.accordion-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
+</style>
